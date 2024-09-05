@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Textil</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .hero {
+            padding: 4rem 0;
+            background-color: #ffffff;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hero-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        .hero-image {
+            flex: 1;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #6e56cf;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .features {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .feature {
+            text-align: center;
+        }
+        .testimonials {
+            padding: 4rem 0;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h3 class="logo">Chatbot Textil<h3/>
+            <div>
+                <a style="cursor: pointer;" onclick="botpress.open()" >Chatbot</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Optimiza tu fabricación textil con nuestro chatbot</h1>
+                    <p>Nuestro chatbot impulsado por IA ofrece asistencia y soluciones personalizadas para ayudar a los fabricantes textiles de Colombia a optimizar sus operaciones y mantenerse por delante de la competencia.</p>
+                    <a onclick="botpress.open()" class="btn">Comenzar</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/f9de.avif" alt="Ilustración del Chatbot" style="object-fit: cover;" width="550" height="550">
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Información Personalizada</h3>
+                        <p>Nuestro chatbot analiza los datos de tu fabricación textil para proporcionar recomendaciones y conocimientos personalizados para optimizar tus operaciones.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Flujos de Trabajo Automatizados</h3>
+                        <p>Optimiza tus procesos de fabricación textil con los flujos de trabajo automatizados de nuestro chatbot, reduciendo tareas manuales y mejorando la eficiencia.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Asistencia Experta</h3>
+                        <p>Obtén soporte personalizado y orientación de nuestro equipo de expertos en la industria textil a través de nuestro chatbot, ayudándote a superar desafíos y alcanzar tus metas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p>Escucha a los fabricantes textiles colombianos que han transformado sus negocios con la ayuda de nuestro chatbot.</p>
+                <div class="testimonial-grid">
+                    <div class="testimonial">
+                        <h4>Juan Diaz</h4>
+                        <p>CEO, Textiles Diaz</p>
+                        <p>"El chatbot ha sido un cambio total para nuestro negocio de fabricación textil. Nos proporciona conocimientos valiosos y automatiza muchos de nuestros flujos de trabajo, lo que nos permite enfocarnos en la innovación y el crecimiento."</p>
+                    </div>
+                    <div class="testimonial">
+                        <h4>Maria Castillo</h4>
+                        <p>Gerente de Operaciones, Textiles Colombianos</p>
+                        <p>"El chatbot ha sido un cambio total para nuestro negocio de fabricación textil. Nos proporciona conocimientos valiosos y automatiza muchos de nuestros flujos de trabajo, lo que nos permite enfocarnos en la innovación y el crecimiento."</p>
+                    </div>
+                    <div class="testimonial">
+                        <h4>Luis Sanchez</h4>
+                        <p>Gerente de Producción, Hilos y Telas</p>
+                        <p>"El chatbot ha sido un cambio total para nuestro negocio de fabricación textil. Nos proporciona conocimientos valiosos y automatiza muchos de nuestros flujos de trabajo, lo que nos permite enfocarnos en la innovación y el crecimiento."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chatbot Textil. Todos los derechos reservados.</p>
+            <nav>
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Privacidad</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/ebabda1f-230f-49cb-92d6-a539834689b1/webchat/v2.1/config.js"></script>
+</body>
+</html>
