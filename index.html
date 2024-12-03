@@ -1,9 +1,10 @@
-
-
 <!DOCTYPE html>
 
-<html lang="en" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en" data-lt-installed="true">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="./cssBot/bootstrap.min.css" rel="stylesheet">
@@ -11,29 +12,362 @@
 
     <title>¡Tu destino en Oslo!</title>
 
-<style class="fslightbox-styles">.fslightbox-absoluted{position:absolute;top:0;left:0}.fslightbox-fade-in{animation:fslightbox-fade-in .3s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out{animation:fslightbox-fade-out .3s ease}.fslightbox-fade-in-strong{animation:fslightbox-fade-in-strong .3s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out-strong{animation:fslightbox-fade-out-strong .3s ease}@keyframes fslightbox-fade-in{from{opacity:.65}to{opacity:1}}@keyframes fslightbox-fade-out{from{opacity:.35}to{opacity:0}}@keyframes fslightbox-fade-in-strong{from{opacity:.3}to{opacity:1}}@keyframes fslightbox-fade-out-strong{from{opacity:1}to{opacity:0}}.fslightbox-cursor-grabbing{cursor:grabbing}.fslightbox-full-dimension{width:100%;height:100%}.fslightbox-open{overflow:hidden;height:100%}.fslightbox-flex-centered{display:flex;justify-content:center;align-items:center}.fslightbox-opacity-0{opacity:0!important}.fslightbox-opacity-1{opacity:1!important}.fslightbox-scrollbarfix{padding-right:17px}.fslightbox-transform-transition{transition:transform .3s}.fslightbox-container{font-family:Arial,sans-serif;position:fixed;top:0;left:0;background:linear-gradient(rgba(30,30,30,.9),#000 1810%);touch-action:pinch-zoom;z-index:1000000000;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}.fslightbox-container *{box-sizing:border-box}.fslightbox-svg-path{transition:fill .15s ease;fill:#ddd}.fslightbox-nav{height:45px;width:100%;position:absolute;top:0;left:0}.fslightbox-slide-number-container{display:flex;justify-content:center;align-items:center;position:relative;height:100%;font-size:15px;color:#d7d7d7;z-index:0;max-width:55px;text-align:left}.fslightbox-slide-number-container .fslightbox-flex-centered{height:100%}.fslightbox-slash{display:block;margin:0 5px;width:1px;height:12px;transform:rotate(15deg);background:#fff}.fslightbox-toolbar{position:absolute;z-index:3;right:0;top:0;height:100%;display:flex;background:rgba(35,35,35,.65)}.fslightbox-toolbar-button{height:100%;width:45px;cursor:pointer}.fslightbox-toolbar-button:hover .fslightbox-svg-path{fill:#fff}.fslightbox-slide-btn-container{display:flex;align-items:center;padding:12px 12px 12px 6px;position:absolute;top:50%;cursor:pointer;z-index:3;transform:translateY(-50%)}@media (min-width:476px){.fslightbox-slide-btn-container{padding:22px 22px 22px 6px}}@media (min-width:768px){.fslightbox-slide-btn-container{padding:30px 30px 30px 6px}}.fslightbox-slide-btn-container:hover .fslightbox-svg-path{fill:#f1f1f1}.fslightbox-slide-btn{padding:9px;font-size:26px;background:rgba(35,35,35,.65)}@media (min-width:768px){.fslightbox-slide-btn{padding:10px}}@media (min-width:1600px){.fslightbox-slide-btn{padding:11px}}.fslightbox-slide-btn-container-previous{left:0}@media (max-width:475.99px){.fslightbox-slide-btn-container-previous{padding-left:3px}}.fslightbox-slide-btn-container-next{right:0;padding-left:12px;padding-right:3px}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-left:22px}}@media (min-width:768px){.fslightbox-slide-btn-container-next{padding-left:30px}}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-right:6px}}.fslightbox-down-event-detector{position:absolute;z-index:1}.fslightbox-slide-swiping-hoverer{z-index:4}.fslightbox-invalid-file-wrapper{font-size:22px;color:#eaebeb;margin:auto}.fslightbox-video{object-fit:cover}.fslightbox-youtube-iframe{border:0}.fslightboxl{display:block;margin:auto;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:67px;height:67px}.fslightboxl div{box-sizing:border-box;display:block;position:absolute;width:54px;height:54px;margin:6px;border:5px solid;border-color:#999 transparent transparent transparent;border-radius:50%;animation:fslightboxl 1.2s cubic-bezier(.5,0,.5,1) infinite}.fslightboxl div:nth-child(1){animation-delay:-.45s}.fslightboxl div:nth-child(2){animation-delay:-.3s}.fslightboxl div:nth-child(3){animation-delay:-.15s}@keyframes fslightboxl{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.fslightbox-source{position:relative;z-index:2;opacity:0}</style></head>
+    <style class="fslightbox-styles">
+        .fslightbox-absoluted {
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-fade-in {
+            animation: fslightbox-fade-in .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out {
+            animation: fslightbox-fade-out .3s ease
+        }
+
+        .fslightbox-fade-in-strong {
+            animation: fslightbox-fade-in-strong .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out-strong {
+            animation: fslightbox-fade-out-strong .3s ease
+        }
+
+        @keyframes fslightbox-fade-in {
+            from {
+                opacity: .65
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out {
+            from {
+                opacity: .35
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        @keyframes fslightbox-fade-in-strong {
+            from {
+                opacity: .3
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out-strong {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        .fslightbox-cursor-grabbing {
+            cursor: grabbing
+        }
+
+        .fslightbox-full-dimension {
+            width: 100%;
+            height: 100%
+        }
+
+        .fslightbox-open {
+            overflow: hidden;
+            height: 100%
+        }
+
+        .fslightbox-flex-centered {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .fslightbox-opacity-0 {
+            opacity: 0 !important
+        }
+
+        .fslightbox-opacity-1 {
+            opacity: 1 !important
+        }
+
+        .fslightbox-scrollbarfix {
+            padding-right: 17px
+        }
+
+        .fslightbox-transform-transition {
+            transition: transform .3s
+        }
+
+        .fslightbox-container {
+            font-family: Arial, sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(rgba(30, 30, 30, .9), #000 1810%);
+            touch-action: pinch-zoom;
+            z-index: 1000000000;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .fslightbox-container * {
+            box-sizing: border-box
+        }
+
+        .fslightbox-svg-path {
+            transition: fill .15s ease;
+            fill: #ddd
+        }
+
+        .fslightbox-nav {
+            height: 45px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-slide-number-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            font-size: 15px;
+            color: #d7d7d7;
+            z-index: 0;
+            max-width: 55px;
+            text-align: left
+        }
+
+        .fslightbox-slide-number-container .fslightbox-flex-centered {
+            height: 100%
+        }
+
+        .fslightbox-slash {
+            display: block;
+            margin: 0 5px;
+            width: 1px;
+            height: 12px;
+            transform: rotate(15deg);
+            background: #fff
+        }
+
+        .fslightbox-toolbar {
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            top: 0;
+            height: 100%;
+            display: flex;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        .fslightbox-toolbar-button {
+            height: 100%;
+            width: 45px;
+            cursor: pointer
+        }
+
+        .fslightbox-toolbar-button:hover .fslightbox-svg-path {
+            fill: #fff
+        }
+
+        .fslightbox-slide-btn-container {
+            display: flex;
+            align-items: center;
+            padding: 12px 12px 12px 6px;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            z-index: 3;
+            transform: translateY(-50%)
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container {
+                padding: 22px 22px 22px 6px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container {
+                padding: 30px 30px 30px 6px
+            }
+        }
+
+        .fslightbox-slide-btn-container:hover .fslightbox-svg-path {
+            fill: #f1f1f1
+        }
+
+        .fslightbox-slide-btn {
+            padding: 9px;
+            font-size: 26px;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn {
+                padding: 10px
+            }
+        }
+
+        @media (min-width:1600px) {
+            .fslightbox-slide-btn {
+                padding: 11px
+            }
+        }
+
+        .fslightbox-slide-btn-container-previous {
+            left: 0
+        }
+
+        @media (max-width:475.99px) {
+            .fslightbox-slide-btn-container-previous {
+                padding-left: 3px
+            }
+        }
+
+        .fslightbox-slide-btn-container-next {
+            right: 0;
+            padding-left: 12px;
+            padding-right: 3px
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 22px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 30px
+            }
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-right: 6px
+            }
+        }
+
+        .fslightbox-down-event-detector {
+            position: absolute;
+            z-index: 1
+        }
+
+        .fslightbox-slide-swiping-hoverer {
+            z-index: 4
+        }
+
+        .fslightbox-invalid-file-wrapper {
+            font-size: 22px;
+            color: #eaebeb;
+            margin: auto
+        }
+
+        .fslightbox-video {
+            object-fit: cover
+        }
+
+        .fslightbox-youtube-iframe {
+            border: 0
+        }
+
+        .fslightboxl {
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 67px;
+            height: 67px
+        }
+
+        .fslightboxl div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 54px;
+            height: 54px;
+            margin: 6px;
+            border: 5px solid;
+            border-color: #999 transparent transparent transparent;
+            border-radius: 50%;
+            animation: fslightboxl 1.2s cubic-bezier(.5, 0, .5, 1) infinite
+        }
+
+        .fslightboxl div:nth-child(1) {
+            animation-delay: -.45s
+        }
+
+        .fslightboxl div:nth-child(2) {
+            animation-delay: -.3s
+        }
+
+        .fslightboxl div:nth-child(3) {
+            animation-delay: -.15s
+        }
+
+        @keyframes fslightboxl {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fslightbox-source {
+            position: relative;
+            z-index: 2;
+            opacity: 0
+        }
+    </style>
+</head>
 <style>
-:root {
-  --color1: #ffff99;
-  --color2: #d9cc8c;
-  --color3: #b39980;
-  --color4: #8c6673;
-  --color5: #D72638;
-}
+    :root {
+        --color1: #ffff99;
+        --color2: #d9cc8c;
+        --color3: #b39980;
+        --color4: #8c6673;
+        --color5: #D72638;
+        --color6: #00205B;
+    }
 
 
     .spiner-example {
         height: 200px;
         padding-top: 70px;
     }
-    .sk-spinner-double-bounce.sk-spinner {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    margin: 0 auto;
-}
 
-    .navbar-nav .nav-item a{
+    .sk-spinner-double-bounce.sk-spinner {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .navbar-nav .nav-item a {
         cursor: pointer;
         font-size: 16px;
         color: #fafafa;
@@ -41,55 +375,63 @@
         padding: 8px 16px !important;
     }
 
-    .box-info-bot{
+    .box-info-bot {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-.sk-spinner-double-bounce .sk-double-bounce1, .sk-spinner-double-bounce .sk-double-bounce2 {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #1ab394;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-animation: sk-doubleBounce 2s infinite ease-in-out;
-    animation: sk-doubleBounce 2s infinite ease-in-out;
-}
-.sk-spinner-double-bounce .sk-double-bounce2 {
-    -webkit-animation-delay: -1s;
-    animation-delay: -1s;
-}
-
-@keyframes sk-doubleBounce {
-    0%, 100% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
+    .sk-spinner-double-bounce .sk-double-bounce1,
+    .sk-spinner-double-bounce .sk-double-bounce2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #1ab394;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-animation: sk-doubleBounce 2s infinite ease-in-out;
+        animation: sk-doubleBounce 2s infinite ease-in-out;
     }
 
-    50% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+    .sk-spinner-double-bounce .sk-double-bounce2 {
+        -webkit-animation-delay: -1s;
+        animation-delay: -1s;
     }
-}
-@media only screen and (max-width: 600px) {
-  video{
-    width: auto !important;
-    height: 100%;
-  }
-  .ocultar-mb img{
-    display: none;
-  }
-}
+
+    @keyframes sk-doubleBounce {
+
+        0%,
+        100% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+
+        50% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        video {
+            width: auto !important;
+            height: 100%;
+        }
+
+        .ocultar-mb img {
+            display: none;
+        }
+    }
 </style>
+
 <body id="top">
 
     <div id="spinner" class="">
-        <div class="" style="z-index: 100000; background: rgba(255, 255, 255, 0.7); position: fixed; width: 100%; height: 100%; top: 0; ">
-    
+        <div class=""
+            style="z-index: 100000; background: rgba(255, 255, 255, 0.7); position: fixed; width: 100%; height: 100%; top: 0; ">
+
         </div>
         <div class="spiner-example" style="z-index: 100000; position: fixed; top: 33%; left: 50%;">
             <div class="sk-spinner sk-spinner-double-bounce">
@@ -98,16 +440,18 @@
             </div>
         </div>
     </div>
-    
+
 
     <!-- Header -->
-   
+
     <section class="bg-dark-color font-2 sticky-top">
         <div class="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <div class="navbar-brand logo-container" style="display: flex; align-items: center; justify-content: center; gap: 2px;">
-                        <img src="./source/norwayBanderas.png" alt="" class="img-fluid" style="height: 44px; margin-right: 4px; ">
+                    <div class="navbar-brand logo-container"
+                        style="display: flex; align-items: center; justify-content: center; gap: 2px;">
+                        <img src="./source/norwayBanderas.png" alt="" class="img-fluid"
+                            style="height: 44px; margin-right: 4px; ">
                         <p style="color: #fafafa; font-size: 32px; margin: 0;">Oslo</p>
                     </div>
 
@@ -115,7 +459,8 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
 
                             <li class="nav-item" style="padding: 0;">
-                                <a class="nav-link" style="cursor: pointer; font-size: 20px; color: #fafafa;" onclick="botpress.open()" >Chatbot</a>
+                                <a class="nav-link" style="cursor: pointer; font-size: 20px; color: #fafafa;"
+                                    onclick="botpress.open()">Agente de viajes</a>
                             </li>
                         </ul>
                     </div>
@@ -126,61 +471,181 @@
     <!-- End Of Header -->
 
     <main>
-        <section class="section image-infinite-bg position-relative animation-bg" style="background-position: center center; padding: 15em 1em; background-color: #000;">
+        <section class="section image-infinite-bg position-relative animation-bg"
+            style="background-position: center center; padding: 15em 1em; background-color: #000;">
             <div class="r-container h-100">
                 <div class="image-overlay">
-                    <video muted autoplay loop src="./source/videoFondo.mp4" style="position: relative; object-fit: cover; width: 100%;">
+                    <video muted autoplay loop src="./source/videoFondo.mp4"
+                        style="position: relative; object-fit: cover; width: 100%;">
 
                     </video>
                 </div>
-                
-                <div class="d-flex flex-column justify-content-center align-items-center text-center gap-3 h-100 position-relative" style="z-index: 2;">
+
+                <div class="d-flex flex-column justify-content-center align-items-center text-center gap-3 h-100 position-relative"
+                    style="z-index: 2;">
                     <h2 class="text-title font-1 lh-1 accent-color">Descubre nuevas sensaciones en Oslo</h2>
-                    <h2 class="text-title text-white font-1 lh-1" style="font-size: 26px;">Aventuras a todo el estilo nordico</h2>
+                    <h2 class="text-title text-white font-1 lh-1" style="font-size: 26px;">En <b>Oslotravel</b>, te
+                        llevamos a vivir <b>aventuras únicas</b> al estilo nórdico</h2>
                     <div class="d-flex flex-row gap-3">
-                        <a type="button" onclick="botpress.open()" class="btn bg-transparent button-outline-white rounded-0 font-1">¡Comenzar ahora!</a>
+                        <a type="button" onclick="botpress.open()"
+                            class="btn bg-transparent button-outline-white rounded-0 font-1">¡Comenzar ahora!</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="r-container">
+                <div class="row row-cols-lg-1">
+                    <div class="col mb-1 box-info-bot">
+                        <div class="d-flex flex-column gap-3">
+                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">BIENVENIDO A OSLO, LA AVENTURA
+                                TE ESPERA</h5>
+                            <h3 class="text-black font-2 fw-semibold" style="font-size: 32px; font-weight: bold;">
+                                Explora Oslo: Naturaleza, Cultura y Aventura en el Corazón de Noruega</h3>
+                            <p class="text-gray font-1">
+                                Oslo es la ciudad perfecta para los aventureros que buscan una experiencia única. Desde
+                                sus impresionantes fiordos y paisajes montañosos hasta sus vibrantes calles llenas de
+                                cultura y vida, Oslo ofrece un sinfín de actividades para todo tipo de explorador.
+                                ¡Prepárate para descubrir un destino que combina la belleza natural con la emoción de la
+                                aventura!
+                            </p>
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col mb-3">
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">Aventuras al Aire Libre
+                                    </h5>
+                                    <p class="text-gray font-1">
+                                        Oslo es un paraíso para los amantes de la naturaleza. Con una ubicación
+                                        privilegiada entre montañas y fiordos, puedes disfrutar de actividades como el
+                                        senderismo, ciclismo de montaña, kayak y paseos en bote por los fiordos. No
+                                        importa la temporada, siempre hay algo emocionante que hacer, desde esquiar en
+                                        invierno hasta explorar los parques nacionales en verano.
+                                    </p>
+                                </div>
+                                <div class="col mb-3">
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">Sumérgete en la Cultura
+                                        Nórdica</h5>
+                                    <p class="text-gray font-1">
+                                        Además de la naturaleza, Oslo ofrece una rica herencia cultural. Puedes explorar
+                                        museos únicos como el Museo de los Barcos Vikingos y el Museo Munch, o perderte
+                                        en el casco antiguo y los vibrantes barrios de la ciudad. La combinación de
+                                        historia y modernidad hace que Oslo sea un destino imprescindible para cualquier
+                                        viajero curioso.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col mb-3">
+
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">Un Itinerario de
+                                        Aventura Personalizado</h5>
+                                    <p class="text-gray font-1">
+                                        Ya sea que busques una escapada corta de fin de semana o una aventura más larga,
+                                        tenemos el itinerario perfecto para ti. Disfruta de vistas espectaculares,
+                                        actividades emocionantes y la calidez de la gente local mientras exploras esta
+                                        ciudad única. ¡Tu próxima aventura te está esperando en Oslo!
+                                    </p>
+                                </div>
+                                <div class="col mb-3">
+
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">¿Por qué elegir
+                                        Oslotravel?</h5>
+                                    <p class="text-gray font-1">
+                                        En <b>Oslotravel</b>, somos una agencia de viajes especializada en ofrecerte la
+                                        mejor experiencia en Oslo. Con sede en <b>Bogotá</b> y <b>Medellín</b>, nos
+                                        encargamos de organizar todos los detalles de tu viaje, incluyendo tus vuelos,
+                                        alojamiento y itinerarios personalizados. Ya sea que busques un viaje relajante
+                                        o una aventura llena de acción, nuestro equipo se asegura de que disfrutes de un
+                                        viaje único, sin preocupaciones. ¡Déjanos llevarte a Oslo y vivir una
+                                        experiencia inolvidable!
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <section class="section">
             <div class="r-container">
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col mb-3 box-info-bot">
                         <div class="d-flex flex-column gap-3">
-                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">BIENVENIDO A OSLO, LA AVENTURA TE ESPERA</h5>
-                            <h3 class="text-black font-2 fw-semibold" style="font-size: 32px; font-weight: bold;">Explora Oslo: Naturaleza, Cultura y Aventura en el Corazón de Noruega</h3>
+                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">Destinos Imperdibles</h5>
+                            <h3 class="text-black font-2 fw-semibold" style="font-size: 32px; font-weight: bold;">
+                                Naturaleza, Cultura y Aventura en el Corazón de Noruega</h3>
                             <p class="text-gray font-1">
-                                Oslo es la ciudad perfecta para los aventureros que buscan una experiencia única. Desde sus impresionantes fiordos y paisajes montañosos hasta sus vibrantes calles llenas de cultura y vida, Oslo ofrece un sinfín de actividades para todo tipo de explorador. ¡Prepárate para descubrir un destino que combina la belleza natural con la emoción de la aventura!
+                                Oslo es la ciudad perfecta para los aventureros que buscan una experiencia única. Desde
+                                sus impresionantes fiordos y paisajes montañosos hasta sus vibrantes calles llenas de
+                                cultura y vida, Oslo ofrece un sinfín de actividades para todo tipo de explorador.
+                                ¡Prepárate para descubrir un destino que combina la belleza natural con la emoción de la
+                                aventura!
                             </p>
-                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">Aventuras al Aire Libre</h5>
-                            <p class="text-gray font-1">
-                                Oslo es un paraíso para los amantes de la naturaleza. Con una ubicación privilegiada entre montañas y fiordos, puedes disfrutar de actividades como el senderismo, ciclismo de montaña, kayak y paseos en bote por los fiordos. No importa la temporada, siempre hay algo emocionante que hacer, desde esquiar en invierno hasta explorar los parques nacionales en verano.
-                            </p>
-                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">Sumérgete en la Cultura Nórdica</h5>
-                            <p class="text-gray font-1">
-                                Además de la naturaleza, Oslo ofrece una rica herencia cultural. Puedes explorar museos únicos como el Museo de los Barcos Vikingos y el Museo Munch, o perderte en el casco antiguo y los vibrantes barrios de la ciudad. La combinación de historia y modernidad hace que Oslo sea un destino imprescindible para cualquier viajero curioso.
-                            </p>
-                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">Un Itinerario de Aventura Personalizado</h5>
-                            <p class="text-gray font-1">
-                                Ya sea que busques una escapada corta de fin de semana o una aventura más larga, tenemos el itinerario perfecto para ti. Disfruta de vistas espectaculares, actividades emocionantes y la calidez de la gente local mientras exploras esta ciudad única. ¡Tu próxima aventura te está esperando en Oslo!
-                            </p>
+
+                            <!-- Sección de Lugares Imperdibles -->
+                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">Lugares Imperdibles en Oslo
+                            </h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-gray font-1">
+                                        <b>El Museo de los Barcos Vikingos</b>: Viaja atrás en el tiempo y descubre los
+                                        barcos vikingos mejor conservados del mundo. Este museo es una parada esencial
+                                        para los amantes de la historia y la cultura noruega.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-gray font-1">
+                                        <b>El Parque de Esculturas de Vigeland</b>: Un lugar impresionante donde arte y
+                                        naturaleza se encuentran. Con más de 200 esculturas de Gustav Vigeland, este
+                                        parque es ideal para pasear y disfrutar del aire libre.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-gray font-1">
+                                        <b>La Ópera de Oslo</b>: Un símbolo arquitectónico moderno de la ciudad, con una
+                                        increíble estructura de mármol que se extiende hasta el agua. Puedes caminar
+                                        sobre su techo para disfrutar de vistas espectaculares de la ciudad y el fiordo.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-gray font-1">
+                                        <b>El Fiordo de Oslo</b>: No te puedes perder un paseo en bote por este famoso
+                                        fiordo, rodeado de hermosos paisajes naturales, islas y pequeños pueblos. Es un
+                                        lugar perfecto para los amantes de la naturaleza y la fotografía.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-gray font-1">
+                                        <b>El Palacio Real</b>: Situado en el centro de Oslo, es la residencia oficial
+                                        de la familia real noruega. Los jardines que lo rodean son ideales para una
+                                        caminata relajante mientras disfrutas de la arquitectura imperial.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    
+
+
+
                     <div class="col mb-3 ocultar-mb">
                         <div class="row row-cols-1 row-cols-lg-2">
                             <div class="col mt-5 mb-3">
                                 <div class="d-flex flex-column gap-3">
                                     <img src="./source/vertical13.jpeg" alt="" class="img-fluid shadow">
-                                    <img src="./source/vertical2.jpeg" alt="" class="img-fluid shadow">     
+                                    <img src="./source/vertical2.jpeg" alt="" class="img-fluid shadow">
                                 </div>
                             </div>
                             <div class="col mb-3">
                                 <div class="d-flex flex-column gap-3">
-                                    <img src="./source/vertical3.jpeg" alt="" class="img-fluid shadow">                        
+                                    <img src="./source/vertical3.jpeg" alt="" class="img-fluid shadow">
                                     <img src="./source/vertical4.jpeg" alt="" class="img-fluid shadow">
                                 </div>
                             </div>
@@ -201,21 +666,109 @@
                     </div>
                     <div class="col mb-3">
                         <div class="d-flex flex-column gap-3 shadow p-3">
-                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">Oslo: Innovación y Sostenibilidad</h5>
+                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">Actividades inolvidables</h5>
+
+                            <!-- Sección de Actividades -->
+                            <h6 class="font-1 fw-semibold" style="color: var(--color6);">Aventuras al Aire Libre</h6>
                             <p class="text-gray font-1">
-                                <b>Oslo</b>, la capital de Noruega, es conocida por su compromiso con la <b>sostenibilidad</b> y la <b>innovación tecnológica</b>. Reconocida como una de las ciudades más verdes del mundo, Oslo es el destino ideal para quienes buscan combinar naturaleza y tecnología.
+                                Oslo es un paraíso para los amantes de la naturaleza. Con una ubicación privilegiada
+                                entre montañas y fiordos, puedes disfrutar de actividades como el senderismo, ciclismo
+                                de montaña, kayak y paseos en bote por los fiordos. No importa la temporada, siempre hay
+                                algo emocionante que hacer, desde esquiar en invierno hasta explorar los parques
+                                nacionales en verano.
                             </p>
+
+                            <h6 class="font-1 fw-semibold" style="color: var(--color6);">Sumérgete en la Cultura Nórdica
+                            </h6>
                             <p class="text-gray font-1">
-                                En transporte, Oslo lidera el cambio hacia la <b>movilidad eléctrica</b>, con una amplia red de estaciones de carga y vehículos eléctricos. Su eficiente transporte público contribuye a la reducción de las <b>emisiones de carbono</b>.
+                                Además de la naturaleza, Oslo ofrece una rica herencia cultural. Puedes explorar museos
+                                únicos como el Museo de los Barcos Vikingos y el Museo Munch, o perderte en el casco
+                                antiguo y los vibrantes barrios de la ciudad. La combinación de historia y modernidad
+                                hace que Oslo sea un destino imprescindible para cualquier viajero curioso.
                             </p>
+
+                            <h6 class="font-1 fw-semibold" style="color: var(--color6);">Un Itinerario de Aventura
+                                Personalizado</h6>
                             <p class="text-gray font-1">
-                                La ciudad apuesta por la <b>digitalización</b> y la <b>inteligencia artificial</b> para mejorar la calidad de vida y optimizar recursos, demostrando que la sostenibilidad y la modernidad pueden ir de la mano.
+                                Ya sea que busques una escapada corta de fin de semana o una aventura más larga, tenemos
+                                el itinerario perfecto para ti. Disfruta de vistas espectaculares, actividades
+                                emocionantes y la calidez de la gente local mientras exploras esta ciudad única. ¡Tu
+                                próxima aventura te está esperando en Oslo!
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="section">
+            <div class="r-container">
+                <div class="row row-cols-lg-1">
+                    <div class="col mb-1 box-info-bot">
+                        <div class="d-flex flex-column gap-3">
+                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">Por último y no menos
+                                importante..</h5>
+                            <h3 class="text-black font-2 fw-semibold" style="font-size: 32px; font-weight: bold;">¿Qué
+                                ofrecemos?</h3>
+                            <!-- Sección de Servicios -->
+                            <h5 class="font-1 fw-semibold" style="color: var(--color5);"></h5>
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col ">
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">Servicios Hotelero</h5>
+                                    <p class="text-gray font-1">
+                                        Desde opciones de lujo hasta alojamientos más accesibles, nos encargamos de
+                                        elegir el hotel que mejor se adapte a tus necesidades y presupuesto.
+                                    </p>
+                                </div>
+                                <div class="col mb-3">
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">Servicios Aéreos</h5>
+                                    <p class="text-gray font-1">
+                                        Gestionamos tus vuelos de manera eficiente, asegurando conexiones cómodas y las
+                                        mejores tarifas para que disfrutes de un viaje sin preocupaciones.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col">
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">Servicios Turísticos
+                                    </h5>
+                                    <p class="text-gray font-1">
+                                        Ofrecemos excursiones guiadas, entradas a museos, visitas a parques nacionales y
+                                        mucho más para que tu experiencia en Oslo sea completa y fascinante.
+                                    </p>
+                                </div>
+                                <div class="col mb-3">
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">Itinerarios
+                                        Personalizados</h5>
+                                    <p class="text-gray font-1">
+                                        Diseñamos itinerarios a medida según tus preferencias, ya sea para una escapada
+                                        relajante o una aventura intensa, adaptados a todos los intereses y edades.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col mb-3">
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">Transporte Privado</h5>
+                                    <p class="text-gray font-1">
+                                        Te aseguramos traslados cómodos y seguros dentro de Oslo, desde el aeropuerto
+                                        hasta cualquier destino turístico que desees explorar.
+                                    </p>
+                                </div>
+                                <div class="col mb-3">
+                                    <h5 class="font-1 fw-semibold" style="color: var(--color5);">Asistencia 24/7</h5>
+                                    <p class="text-gray font-1">
+                                        Nuestro equipo está disponible las 24 horas del día, los 7 días de la semana,
+                                        para ofrecerte asistencia en cualquier momento durante tu viaje.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
         <section class="section">
             <div class="r-container">
@@ -227,10 +780,13 @@
                         <div class="col mb-3">
                             <div class="overlay-card" style="background-image: url(/source/osloLogo.jpeg);">
                                 <div class="overlay-body gap-3">
-                                   
-                                    <h5 class="text-white fw-semibold font-1">Los Colombianos no necesitando visa para vivir la experiencia de conocer y sentir Noruega con sus propios sentidos</h5>
+
+                                    <h5 class="text-white fw-semibold font-1">Los Colombianos no necesitando visa para
+                                        vivir la experiencia de conocer y sentir Noruega con sus propios sentidos</h5>
                                     <div>
-                                        <a href="https://www.norway.no/es/colombia/servicios-info/visado-visitante-permiso-residencia-temporal/visado-visitante/" type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">Ir a la noticia</a>
+                                        <a href="https://www.norway.no/es/colombia/servicios-info/visado-visitante-permiso-residencia-temporal/visado-visitante/"
+                                            type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">Ir a la
+                                            noticia</a>
                                     </div>
                                 </div>
                             </div>
@@ -238,12 +794,17 @@
                         <div class="col mb-3">
                             <div class="d-flex gap-3 flex-lg-row flex-column">
                                 <div class="accordion-image">
-                                    <div class="overlay-card" style="background-image: url(/source/Industria-textil-circularidad-sostenibilidad-750x500.jpg);">
+                                    <div class="overlay-card"
+                                        style="background-image: url(/source/Industria-textil-circularidad-sostenibilidad-750x500.jpg);">
                                         <div class="overlay-body gap-3">
 
-                                            <h5 class="text-white fw-semibold font-1">En Oslo hay todo tipo de lugares inspirados en la arquitectura nordica donde conoceras y sentiras que eres un vikingo de la época</h5>
+                                            <h5 class="text-white fw-semibold font-1">En Oslo hay todo tipo de lugares
+                                                inspirados en la arquitectura nordica donde conoceras y sentiras que
+                                                eres un vikingo de la época</h5>
                                             <div>
-                                                <a href="https://www.visitoslo.com/es/articulos/vikingos/" type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">Ir a la noticia</a>
+                                                <a href="https://www.visitoslo.com/es/articulos/vikingos/" type="button"
+                                                    class="btn rounded-0 btn-accent-light fw-bold font-2">Ir a la
+                                                    noticia</a>
                                             </div>
                                         </div>
                                     </div>
@@ -251,21 +812,32 @@
                                 <div class="accordion-image">
                                     <div class="overlay-card" style="background-image: url(/source/Zasca.jpeg);">
                                         <div class="overlay-body gap-3">
-                                            
-                                            <h5 class="text-white fw-semibold font-1">Uno de los climas más agradables si te gusta el frío, acompañado de tus amigos aventureros y divirtiendose en cada momento</h5>
+
+                                            <h5 class="text-white fw-semibold font-1">Uno de los climas más agradables
+                                                si te gusta el frío, acompañado de tus amigos aventureros y
+                                                divirtiendose en cada momento</h5>
                                             <div>
-                                                <a href="https://es.weatherspark.com/y/68697/Clima-promedio-en-Oslo-Noruega-durante-todo-el-a%C3%B1o" type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">Ir a la noticia</a>
+                                                <a href="https://es.weatherspark.com/y/68697/Clima-promedio-en-Oslo-Noruega-durante-todo-el-a%C3%B1o"
+                                                    type="button"
+                                                    class="btn rounded-0 btn-accent-light fw-bold font-2">Ir a la
+                                                    noticia</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-image">
-                                    <div class="overlay-card" style="background-image: url(/source/logistica-inversa-moda-circular.jpg);">
+                                    <div class="overlay-card"
+                                        style="background-image: url(/source/logistica-inversa-moda-circular.jpg);">
                                         <div class="overlay-body gap-3">
-                                            
-                                            <h5 class="text-white fw-semibold font-1">Aquí encontraras los mejores lugares para hacer senderimos en nuestro querido Oslo, exploraras lugares nuevo y siempre cerca de buena compañia</h5>
+
+                                            <h5 class="text-white fw-semibold font-1">Aquí encontraras los mejores
+                                                lugares para hacer senderimos en nuestro querido Oslo, exploraras
+                                                lugares nuevo y siempre cerca de buena compañia</h5>
                                             <div>
-                                                <a href="https://es.wikiloc.com/rutas/senderismo/noruega/oslo" type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">Ir a la noticia</a>
+                                                <a href="https://es.wikiloc.com/rutas/senderismo/noruega/oslo"
+                                                    type="button"
+                                                    class="btn rounded-0 btn-accent-light fw-bold font-2">Ir a la
+                                                    noticia</a>
                                             </div>
                                         </div>
                                     </div>
@@ -277,12 +849,86 @@
             </div>
         </section>
 
+        <section class="section">
+            <div class="r-container">
+                <div class="row row-cols-lg-1">
+                    <div class="col mb-1 box-info-bot">
+                        <div class="d-flex flex-column gap-3">
+                            <h5 class="font-1 fw-semibold" style="color: var(--color5);">Contáctanos</h5>
+                            <h3 class="text-black font-2 fw-semibold" style="font-size: 32px; font-weight: bold;">
+                                ¡Estamos aquí para ayudarte!</h3>
+                            <p class="text-gray font-1">
+                                Si tienes alguna pregunta, duda o deseas más información sobre nuestros servicios, no
+                                dudes en contactarnos. Completa el formulario y te responderemos lo antes posible.
+                            </p>
+
+                            <!-- Formulario de contacto -->
+                            <form id="form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         
         <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
         <script src="https://files.bpcontent.cloud/2024/12/03/02/20241203024657-3K2JWD7Y.js"></script>
-    <script>
-    window.addEventListener("load", function() {
-    document.getElementById("spinner").style.display = "none";
-});
-    </script>
-</body></html>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+            window.addEventListener("load", function () {
+                document.getElementById("spinner").style.display = "none";
+            });
+            
+            //Formulario para escribirle al cliente directamente para darle más información
+
+            (function() {
+                emailjs.init("d2xdAWUnj-IePBAR8"); // Asegúrate de usar tu publicKey
+            })();
+        
+            document.getElementById('form').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                sendText(); 
+            });
+        
+            function sendText() {
+                let nameUser = document.getElementById('name').value;
+                let email = document.getElementById('email').value;
+                let message = document.getElementById('message').value;
+        
+                var templateParams = {
+                    e_name: nameUser,
+                    e_email: email,
+                    e_message: message
+                };
+        
+                emailjs.send('service_jfjquvj', 'template_0ixjba1', templateParams)
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        alert('¡Mensaje enviado con éxito!');
+                        document.getElementById('form').reset(); 
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                        alert('Error al enviar el mensaje. Por favor, intenta de nuevo.');
+                    });
+            }
+        </script>
+</body>
+</html>
